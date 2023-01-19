@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500&family=Source+Code+Pro:wght@300;400;500;600&display=swap');
+
+:root {
+    --bright-orange: hsl(31, 77%, 52%); 
+    --dark-cyan: hsl(184, 100%, 22%); 
+    --very-dark-cyan: hsl(179, 100%, 13%); 
+    --transparent-white: hsla(0, 0%, 100%, 0.75); 
+    --very-light-gray: hsl(0, 0%, 95%); 
+}
+
+body {
+    background-color: var(--very-light-gray);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    padding: 0 20%;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.containers {
+    padding: 20%;
+}
+
+h2 {
+    margin: 20% 0 20% 0;
+    color: var(--very-light-gray);
+}
+
+p {
+    color: var(--transparent-white);
+}
+
+button {
+    margin-top: 20%;
+    border: none;
+    background-color: var(--very-light-gray);
+    padding: 8% 15%;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+button:hover {
+    border: 2px solid white;
+    background-color: transparent;
+    color: white;
+}
+
+.sedans-container {
+    background-color: var(--bright-orange);
+}
+.sedans-container button {
+    color: var(--bright-orange);
+}
+.sedans-container button:hover {
+    color: white;
+}
+
+.suv-container {
+    background-color: var(--dark-cyan);
+}
+.suv-container button {
+    color: var(--dark-cyan);
+}
+.suv-container button:hover {
+    color: white;
+}
+
+.luxury-container {
+    background-color: var(--very-dark-cyan);
+}
+.luxury-container button {
+    color: var(--very-dark-cyan);
+}
+.luxury-container button:hover {
+    color: white;
+}
+
+
+@media screen and (max-width: 450px) {
+    body {
+        font-size: 15px;
+        padding: 5% 15%;
+    }
+    
+    main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+    }
+    
+    .wrapper {
+        display: grid;
+        grid-template-columns: 1fr;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+    
+    .containers {
+        padding: 10%;
+    }
+    
+    h2 {
+        margin: 10% 0 10% 0;
+    }
+    
+    button {
+        margin-top: 10%;
+        padding: 6% 10%;
+        border-radius: 30px;
+    }
+}
